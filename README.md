@@ -8,34 +8,4 @@
 
  ### :pencil2: Mathematical validation for a weakly stationary time series
 - [View R file](https://github.com/Ellypham92/applied-time-series-analysis/blob/main/Weakly%20Stationary.Rmd) <br>
-- Problem: A time series with a periodic component can be constructed from **xt = U1 sin(2πω0t) + U2 cos(2πω0t)**, where U1 and U2 are independent random variables with zero means and **E(U1^2) = E(U2^2) = σ^2**. The constant ω0 determines the period or time it takes the process to make one complete cycle. Show that this series is weakly stationary with autocovariance function γ(h) = σ2 cos(2πω0h).
-
-:heavy_check_mark: To show the stationarity of xt, we first need to check:
-
-**A. Mean Function E[xt]:** <br>
-         = E[U1sin(2πω0t) + U2cos(2πω0t)]  
-         = sin(2πω0t)E[U1] + cos(2πω0t)E[U2] <br>
-         = sin(2πω0t) * 0 + cos(2πω0t) * 0     #(since their mean = 0, E[U1]=E[U2]=0) <br>
-         = 0                                
-
-
-**B. Autocovariance function γ(t, t+h):**
-
-  = Cov(xt, xt+h) 
-  = Cov(U1sin(2πω0t) + U2cos(2πω0t), U1sin(2πω0[t+h])+U2cos(2πω0[t+h]) <br>
-  = Cov(U1sin(2πω0t), U1sin(2πω0[t+h]) + Cov(U1sin(2πω0t),U2cos(2πω0[t+h]) + Cov(U2cos(2πω0t), U1sin(2πω0[t+h]) + Cov(U2cos(2πω0t),U2cos(2πω0[t+h]) <br>
-  = sin(2πω0t)sin(2πω0[t+h])Cov(U1,U1)         +  sin(2πω0t)cos(2πω0[t+h])Cov(U1,U2)        # Cov(U1,U1) = σ^2.  # Cov(U1,U2) = 0 <br>
-      + Cov(U2cos(2πω0t), U1sin(2πω0[t+h]) + Cov(U2cos(2πω0t),U2cos(2πω0[t+h]) <br>
-      + cos(2πω0t)sin(2πω0[t+h])Cov(U2,U1)      # Cov(U2,U1) = 0 <br>
-      + cos(2πω0t)cos(2πω0[t+h])Cov(U2,U2)      # Cov(U2,U2) = σ^2 <br>
-  = sin(2πω0t)sin(2πω0[t+h])σ^2 + cos(2πω0t)cos(2πω0[t+h])σ^2 <br>
-  = {sin(2πω0[t+h] sin(2πω0t)) + cos(2πω0[t+h]) cos(2πω0t)} σ^2 <br>
-
-Using cos(A - B) = sin(A)sin(B) + cos(A)cos(B) <br>
-    = cos(2πω0[t+h] - 2πω0t) σ^2 <br>
-    = cos(2πω0h)σ^2   
-
-
-**Since, the mean is constant (0) and the autocovariance (cos(2πω0h)σ^2) depends on only lag(h), we can say that the series is weakly stationary.**
-
-
+- Conditions for a weakely stationary are: constant mean and autocovariance depends on lag but not time
