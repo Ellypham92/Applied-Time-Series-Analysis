@@ -14,11 +14,9 @@ Problem: A time series with a periodic component can be constructed from **xt = 
 
 **Mean Function E[xt]**
 
-E[xt] = E[U1sin(2πω0t) + U2cos(2πω0t)] = sin(2πω0t)E[U1] + cos(2πω0t)E[U2] 
-
-      = sin(2πω0t) * 0 + cos(2πω0t) * 0     #(since their mean = 0, E[U1]=E[U2]=0)
-
-      = 0                                   
+**E[xt]  = E[U1sin(2πω0t) + U2cos(2πω0t)] = sin(2πω0t)E[U1] + cos(2πω0t)E[U2] 
+         = sin(2πω0t) * 0 + cos(2πω0t) * 0     #(since their mean = 0, E[U1]=E[U2]=0)
+         = 0**                                   
 
 
 **Autocovariance function:**
