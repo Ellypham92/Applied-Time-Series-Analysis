@@ -8,4 +8,4 @@
 
  ### :pencil2: Mathematical validation for a weakly stationary time series
 - [View R file](https://github.com/Ellypham92/applied-time-series-analysis/blob/main/Weakly%20Stationary.Rmd) <br>
-- Conditions for a weakely stationary are: constant mean and autocovariance depends on lag but not time
+- Conditions for a weakely stationary are: a.constant mean and b. autocovariance depends on lag but not time
