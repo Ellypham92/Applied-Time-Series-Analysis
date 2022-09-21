@@ -12,9 +12,10 @@ Problem: A time series with a periodic component can be constructed from **xt = 
 
 :heavy_check_mark: To show the stationarity of xt, we first need to check:
 
-**Mean Function**
+**Mean Function E[xt]**
 
-E[xt] = E[U1sin(2πω0t) + U2cos(2πω0t)]
+E[xt] 
+      = E[U1sin(2πω0t) + U2cos(2πω0t)]
 
       = sin(2πω0t)E[U1] + cos(2πω0t)E[U2] 
 
