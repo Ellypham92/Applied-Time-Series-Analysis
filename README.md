@@ -8,7 +8,7 @@
 
 ### Mathematical validation for a weakly stationary time series
 
-:beginner:  Problem: A time series with a periodic component can be constructed from xt = U1 sin(2πω0t) + U2 cos(2πω0t), where U1 and U2 are independent random variables with zero means and **E(U1^2) = E(U2^2) = σ^2**. The constant ω0 determines the period or time it takes the process to make one complete cycle. Show that this series is weakly stationary with autocovariance function γ(h) = σ2 cos(2πω0h).
+Problem: A time series with a periodic component can be constructed from xt = U1 sin(2πω0t) + U2 cos(2πω0t), where U1 and U2 are independent random variables with zero means and **E(U1^2) = E(U2^2) = σ^2**. The constant ω0 determines the period or time it takes the process to make one complete cycle. Show that this series is weakly stationary with autocovariance function γ(h) = σ2 cos(2πω0h).
 
 :heavy_check_mark: To show the stationarity of xt, we first need to check the Mean and Autocovariance of the series
 
