@@ -5,3 +5,5 @@
 
 
 # Application of Time Series Analysis
+
+:beginner: [Weakly Stationary]()
