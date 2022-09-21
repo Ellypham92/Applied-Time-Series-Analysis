@@ -32,7 +32,7 @@ Problem: A time series with a periodic component can be constructed from **xt = 
   = {sin(2πω0[t+h] sin(2πω0t)) + cos(2πω0[t+h]) cos(2πω0t)} σ^2 <br>
 # Using cos(A - B) = sin(A)sin(B) + cos(A)cos(B)
   = cos(2πω0[t+h] - 2πω0t) σ^2 <br>
-  = cos(2πω0h)σ^2**   <br>
+  = cos(2πω0h)σ^2**   
 
 
 **Since, the mean is constant (0) and the autocovariance (cos(2πω0h)σ^2) depends on only lag(h), we can say that the series is weakly stationary.**
