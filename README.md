@@ -6,4 +6,4 @@
 
 # Application of Time Series Analysis
 
-:beginner: [Weakly Stationary]()
+:beginner: [Determine the time series is a weakly stationary]()
